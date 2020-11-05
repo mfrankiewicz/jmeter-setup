@@ -6,4 +6,4 @@ python3 -m pip install bzt
 
 source common.sh
 
-echo "java.rmi.server.hostname=10.114.0." >> ../jmeter/jmeter5.2/bin/jmeter.properties
+echo "java.rmi.server.hostname=10.114.0." >> ../jmeter/jmeter5.2/bin/system.properties
