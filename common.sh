@@ -15,3 +15,5 @@ cp ../jmeter/jmeter5.2/bin/system.properties.dist ../jmeter/jmeter5.2/bin/system
 echo "server.rmi.ssl.disable=true" >> ../jmeter/jmeter5.2/bin/jmeter.properties
 
 echo "java.rmi.server.hostname=${IP}" >> ../jmeter/jmeter5.2/bin/system.properties
+
+sed -i "s/#RMI_HOST_DEF=-Djava.rmi.server.hostname=xxx.xxx.xxx.xxx/RMI_HOST_DEF=-Djava.rmi.server.hostname=${IP}/g" ../jmeter/jmeter5.2/bin/jmeter-server
